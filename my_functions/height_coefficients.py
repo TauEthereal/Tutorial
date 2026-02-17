@@ -1,7 +1,4 @@
 def heights(Height):
-    Рост =None
-    МРУ = None
-    МРБ = None
     if 0.1 <= Height <= 0.49:
      Рост = "Крошечный"
      МРУ = 8
