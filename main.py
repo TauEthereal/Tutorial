@@ -1,7 +1,4 @@
-import my_functions.height_coefficients
-import my_functions.weight_coefficients
-import my_functions.frnd_coefficients
-import my_functions.growth_coefficients
+import my_functions
 Height, Weight, Frnd, Catch, Health, Atk,Def, SpAtk, SpDef, Spd = map(int, input("Введите в строгой последовательности значения Height (в метрах) Weight Frnd Catch Health Atk Def SpAtk SpDef целым числом через пробел").split())
 Growth = input("Введите значение атрибута Growth Rate на английском, как-то: Medium Fast")
 #Этап 1. Цикл для Роста
@@ -17,4 +14,3 @@ print(Дружелюбие)
 XP = my_functions.growth_coefficients.growths(Growth)
 print(XP)
 #Этап 5. Цикл для поимки
-CR = 
