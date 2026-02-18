@@ -5,12 +5,12 @@ Growth = input("Введите значение атрибута Growth Rate н�
 Рост,МРУ,МРБ = my_functions.heights(Height)
 print(Рост)
 #Этап 2. Цикл для Массы
-Масса, ММУ, ММБ,ММЗ = my_functions.weight_coefficients.weights(Weight)
+Масса, ММУ, ММБ,ММЗ = my_functions.weights(Weight)
 print(Масса)
 #Этап 3. Цикл для Дружелюбия
-Дружелюбие = my_functions.frnd_coefficients.frnds(Frnd)
+Дружелюбие = my_functions.frnds(Frnd)
 print(Дружелюбие)
 #Этап 4. Цикл для теста Опыта
-XP = my_functions.growth_coefficients.growths(Growth)
+XP = my_functions.growths(Growth)
 print(XP)
 #Этап 5. Цикл для поимки
