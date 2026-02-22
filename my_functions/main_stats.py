@@ -1,4 +1,4 @@
-def stats(stat):
+def stats(stat, МРУ=0,ММУ=0):
     import math
     a = math.floor(stat/20)
     b = math.ceil(stat/40)
@@ -11,6 +11,7 @@ def stats(stat):
         d = 4
     else:
         d = 6
-    return print("{a}к10"+"{b+d}")
+    e = b+d+МРУ+ММУ
+    return (f"{a}к10+{e}")
 
     

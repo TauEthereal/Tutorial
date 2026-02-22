@@ -1,6 +1,6 @@
 import my_functions
 import math
-Height, Weight, Frnd, Catch, Health, Atk,Def, SpAtk, SpDef, Spd = map(float,input("Введите в строгой последовательности значения Height в метрах Weight Frnd Catch Health Atk Def SpAtk SpDef целым числом через пробел").split())
+Height, Weight, Frnd, Catch, Health, Atk,Def, SpAtk, SpDef, Spd = map(float,input("Введите в строгой последовательности значения Height в метрах, Weight Frnd Catch Health Atk Def SpAtk SpDef Spd целым числом через пробел").split())
 Growth = input("Введите значение атрибута Growth Rate на английском, как-то: Medium Fast")
 #Этап 1. Цикл для Роста
 Рост,МРУ,МРБ = my_functions.heights(Height)
@@ -19,9 +19,9 @@ XP = my_functions.growths(Growth)
 Защита = my_functions.stats(Def)
 Спецатака = my_functions.stats(SpAtk)
 Спецзащита = my_functions.stats(SpDef)
-Уворот = my_functions.stats(Spd) + МРУ + ММУ
+Уворот = my_functions.stats(Spd,МРУ,ММУ)
 #Этап 8. Быстрота
-Быстрота = math.ceil(Spd/15) + МРБ + ММБ
+Быстрота = math.ceil(Spd/15)+МРБ+ММБ
 #Этап 9. Вывод
 print(Рост)
 print(Масса)
